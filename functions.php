@@ -1161,7 +1161,7 @@ $category = get_the_category();
 $category_id = get_cat_ID( $category[0]->cat_name );
 
 echo '<li> &raquo; '. get_category_parents( $category_id, TRUE, " &raquo; " );
-echo the_title(",", FALSE) ."</li>";
+echo "</li>";
 }
 elseif ( is_page() )
 {
