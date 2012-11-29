@@ -10,7 +10,7 @@
 
 get_header(); ?>
 <section id="leftblank" class="span1">&nbsp;</section>
-<section id="primary" class="span7">
+<section id="primary" class="span8">
 <?php
 if (function_exists('get_breadcrumbs')){
 get_breadcrumbs();
