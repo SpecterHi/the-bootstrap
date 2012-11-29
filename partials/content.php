@@ -21,7 +21,7 @@ tha_entry_before(); ?>
 		</hgroup>
 	<?php
 		else :
-			the_title( '<h1 class="entry-title"><a href="' . get_permalink() .'" title="' . sprintf( esc_attr__( 'Permalink to %s', 'the-bootstrap' ), the_title_attribute( 'echo=0' ) ) . '" rel="bookmark">', '</a></h1>' );
+			the_title( '<h5 class="entry-title"><a href="' . get_permalink() .'" title="' . sprintf( esc_attr__( 'Permalink to %s', 'the-bootstrap' ), the_title_attribute( 'echo=0' ) ) . '" rel="bookmark">', '</a></h5>' );
 		endif;
 		
 		if ( 'post' == get_post_type() ) : ?>
@@ -35,16 +35,6 @@ tha_entry_before(); ?>
 	<div class="entry-summary clearfix">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
-	<?php else : ?>
-	<div class="entry-content clearfix">
-		<?php if ( has_post_thumbnail() ) : ?>
-		<a class="thumbnail post-thumbnail span2" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-			<?php the_post_thumbnail( 'thumbnail' ); ?>
-		</a>
-		<?php endif;
-		the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'the-bootstrap' ) );
-		the_bootstrap_link_pages(); ?>
-	</div><!-- .entry-content -->
 	<?php endif; ?>
 
 	<footer class="entry-meta">
