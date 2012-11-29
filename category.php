@@ -23,10 +23,6 @@ get_breadcrumbs();
 		if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title"><?php
-					printf( __( 'Category Archives: %s', 'the-bootstrap' ), '<span>' . single_cat_title( '', false ) . '</span>' );
-				?></h1>
-	
 				<?php if ( $category_description = category_description() ) {
 					echo apply_filters( 'category_archive_meta', '<div class="category-archive-meta">' . $category_description . '</div>' );
 				} ?>
