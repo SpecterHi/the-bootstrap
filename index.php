@@ -16,29 +16,18 @@
 
 get_header(); ?>
 
-<section id="primary" class="span8">
+<section id="primary" class="span1">
 	<?php tha_content_before(); ?>
-	<div id="content" role="main">
-		<?php tha_content_top();
-		
-		if ( have_posts() ) {
-			while ( have_posts() ) {
-				the_post();
-				get_template_part( '/partials/content', get_post_format() );
-			}
-			the_bootstrap_content_nav( 'nav-below' );
-		}
-		else {
-			get_template_part( '/partials/content', 'not-found' );
-		}
-	
-		tha_content_bottom(); ?>
-	</div><!-- #content -->
+	<div id="content" role="main">&nbsp;</div><!-- #content -->
 	<?php tha_content_after(); ?>
 </section><!-- #primary -->
 
 <?php
-get_sidebar();
+get_sidebar( 'bath' );
+get_sidebar( 'rath' );
+get_sidebar( 'iath' );
+get_sidebar( 'cath' );
+get_sidebar( 'sath' );
 get_footer();
 
 

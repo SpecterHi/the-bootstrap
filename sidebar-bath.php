@@ -7,16 +7,10 @@
  */
 
 tha_sidebars_before(); ?>
-<section id="secondary" class="widget-area span2" role="complementary">
+<section id="bh" class="widget-area span2" role="complementary">
 
 	<?php tha_sidebar_top();
 	if ( ! dynamic_sidebar( 'bath' ) ) {
-		the_widget( 'WP_Widget_Meta', array(), array(
-			'before_widget'	=>	'<aside id="meta" class="widget well widget_meta">',
-			'after_widget'	=>	'</aside>',
-			'before_title'	=>	'<h3 class="widget-title">',
-			'after_title'	=>	'</h3>',
-		) );
 	} // end sidebar widget area
 	tha_sidebar_bottom(); ?>
 </section><!-- #secondary .widget-area -->
