@@ -11,7 +11,11 @@
 get_header(); ?>
 
 <section id="primary" class="span8">
-
+<?php
+if (function_exists('get_breadcrumbs')){
+get_breadcrumbs();
+}
+?>
 	<?php tha_content_before(); ?>
 	<div id="content" role="main">
 		<?php tha_content_top();
