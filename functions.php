@@ -196,6 +196,56 @@ function the_bootstrap_widgets_init() {
 		'after_title'	=>	'</h2>',
 	) );
 
+	register_sidebar( array(
+		'name'			=>	__( 'Brazil Sidebar', 'the-bootstrap' ),
+		'description'	=>	__( 'Shown on Homepage.', 'the-bootstrap' ),
+		'id'			=>	'BatH',
+		'before_widget'	=>	'<aside id="%1$s" class="widget well %2$s">',
+		'after_widget'	=>	'</aside>',
+		'before_title'	=>	'<h2 class="widget-title">',
+		'after_title'	=>	'</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'			=>	__( 'Russia Sidebar', 'the-bootstrap' ),
+		'description'	=>	__( 'Shown on Homepage.', 'the-bootstrap' ),
+		'id'			=>	'RatH',
+		'before_widget'	=>	'<aside id="%1$s" class="widget well %2$s">',
+		'after_widget'	=>	'</aside>',
+		'before_title'	=>	'<h2 class="widget-title">',
+		'after_title'	=>	'</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'			=>	__( 'India Sidebar', 'the-bootstrap' ),
+		'description'	=>	__( 'Shown on Homepage.', 'the-bootstrap' ),
+		'id'			=>	'IatH',
+		'before_widget'	=>	'<aside id="%1$s" class="widget well %2$s">',
+		'after_widget'	=>	'</aside>',
+		'before_title'	=>	'<h2 class="widget-title">',
+		'after_title'	=>	'</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'			=>	__( 'China Sidebar', 'the-bootstrap' ),
+		'description'	=>	__( 'Shown on Homepage.', 'the-bootstrap' ),
+		'id'			=>	'CatH',
+		'before_widget'	=>	'<aside id="%1$s" class="widget well %2$s">',
+		'after_widget'	=>	'</aside>',
+		'before_title'	=>	'<h2 class="widget-title">',
+		'after_title'	=>	'</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'			=>	__( 'South Africa Sidebar', 'the-bootstrap' ),
+		'description'	=>	__( 'Shown on Homepage.', 'the-bootstrap' ),
+		'id'			=>	'SatH',
+		'before_widget'	=>	'<aside id="%1$s" class="widget well %2$s">',
+		'after_widget'	=>	'</aside>',
+		'before_title'	=>	'<h2 class="widget-title">',
+		'after_title'	=>	'</h2>',
+	) );
+	
 	include_once( 'inc/the-bootstrap-image-meta-widget.php' );
 	register_widget( 'The_Bootstrap_Image_Meta_Widget' );
 	
