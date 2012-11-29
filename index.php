@@ -16,7 +16,7 @@
 
 get_header(); ?>
 
-<section id="primary" class="span1">
+<section id="leftblank" class="span1">
 	<?php tha_content_before(); ?>
 	<div id="content" role="main">&nbsp;</div><!-- #content -->
 	<?php tha_content_after(); ?>
