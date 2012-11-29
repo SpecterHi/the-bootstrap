@@ -197,9 +197,9 @@ function the_bootstrap_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'			=>	__( 'Brazil Sidebar', 'the-bootstrap' ),
+		'name'			=>	__( 'bath Sidebar', 'the-bootstrap' ),
 		'description'	=>	__( 'Shown on Homepage.', 'the-bootstrap' ),
-		'id'			=>	'BatH',
+		'id'			=>	'bath',
 		'before_widget'	=>	'<aside id="%1$s" class="widget well %2$s">',
 		'after_widget'	=>	'</aside>',
 		'before_title'	=>	'<h2 class="widget-title">',
@@ -207,9 +207,9 @@ function the_bootstrap_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'			=>	__( 'Russia Sidebar', 'the-bootstrap' ),
+		'name'			=>	__( 'rath Sidebar', 'the-bootstrap' ),
 		'description'	=>	__( 'Shown on Homepage.', 'the-bootstrap' ),
-		'id'			=>	'RatH',
+		'id'			=>	'rath',
 		'before_widget'	=>	'<aside id="%1$s" class="widget well %2$s">',
 		'after_widget'	=>	'</aside>',
 		'before_title'	=>	'<h2 class="widget-title">',
@@ -217,9 +217,9 @@ function the_bootstrap_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'			=>	__( 'India Sidebar', 'the-bootstrap' ),
+		'name'			=>	__( 'india Sidebar', 'the-bootstrap' ),
 		'description'	=>	__( 'Shown on Homepage.', 'the-bootstrap' ),
-		'id'			=>	'IatH',
+		'id'			=>	'iath',
 		'before_widget'	=>	'<aside id="%1$s" class="widget well %2$s">',
 		'after_widget'	=>	'</aside>',
 		'before_title'	=>	'<h2 class="widget-title">',
@@ -227,9 +227,9 @@ function the_bootstrap_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'			=>	__( 'China Sidebar', 'the-bootstrap' ),
+		'name'			=>	__( 'china Sidebar', 'the-bootstrap' ),
 		'description'	=>	__( 'Shown on Homepage.', 'the-bootstrap' ),
-		'id'			=>	'CatH',
+		'id'			=>	'cath',
 		'before_widget'	=>	'<aside id="%1$s" class="widget well %2$s">',
 		'after_widget'	=>	'</aside>',
 		'before_title'	=>	'<h2 class="widget-title">',
@@ -237,9 +237,9 @@ function the_bootstrap_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'			=>	__( 'South Africa Sidebar', 'the-bootstrap' ),
+		'name'			=>	__( 'sath Sidebar', 'the-bootstrap' ),
 		'description'	=>	__( 'Shown on Homepage.', 'the-bootstrap' ),
-		'id'			=>	'SatH',
+		'id'			=>	'sath',
 		'before_widget'	=>	'<aside id="%1$s" class="widget well %2$s">',
 		'after_widget'	=>	'</aside>',
 		'before_title'	=>	'<h2 class="widget-title">',
@@ -248,7 +248,7 @@ function the_bootstrap_widgets_init() {
 	
 	include_once( 'inc/the-bootstrap-image-meta-widget.php' );
 	register_widget( 'The_Bootstrap_Image_Meta_Widget' );
-	
+
 	include_once( 'inc/the-bootstrap-gallery-widget.php' );
 	register_widget( 'The_Bootstrap_Gallery_Widget' );
 }
