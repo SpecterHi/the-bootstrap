@@ -11,7 +11,7 @@
 get_header(); ?>
 <section id="leftblank" class="span1">&nbsp;</section>
 <section id="primary" class="span8">
-<?php if (function_exists('show_full_breadcrumb')) show_full_breadcrumb(); ?>
+<?php if (function_exists('HAG_Breadcrumbs')) { HAG_Breadcrumbs(); } ?>
 <?php wp_list_cats('child_of=' . get_category_root_id($cat) . '&show_count=1&hide_empty=0&show_option_none=0');?>	
 	<?php tha_content_before(); ?>
 	<div id="content" role="main">

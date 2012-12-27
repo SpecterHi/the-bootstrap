@@ -11,7 +11,7 @@
 get_header(); ?>
 <section id="leftblank" class="span1">&nbsp;</section>
 <section id="primary" class="span8">
-<?php if (function_exists('show_full_breadcrumb')) show_full_breadcrumb(); ?>
+<?php if (function_exists('HAG_Breadcrumbs')) { HAG_Breadcrumbs(); } ?>
 
 	<?php tha_content_before(); ?>
 	<div id="content" role="main">
