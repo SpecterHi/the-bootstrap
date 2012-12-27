@@ -24,10 +24,9 @@ tha_entry_before(); ?>
 		else :
 				$categories_list = get_the_category_list( _x( ', ', 'used between list items, there is a space after the comma', 'the-bootstrap' ) );
 
-		if ( 'post' == get_post_type() AND $categories_list ) // Hide category text for pages on Search
-			printf( '<div class="row"><div class="postin span2">' . __( '%1$s ', 'the-bootstrap' ) . '</div>', $categories_list );
-
-			the_title( '<div class="entry-title span6"><a href="' . get_permalink() .'" title="' . sprintf( esc_attr__( 'Permalink to %s', 'the-bootstrap' ), the_title_attribute( 'echo=0' ) ) . '" rel="bookmark">', '</a></div>' );
+			the_title( '<div class="row"><div class="entry-title span4"><a href="' . get_permalink() .'" title="' . sprintf( esc_attr__( 'Permalink to %s', 'the-bootstrap' ), the_title_attribute( 'echo=0' ) ) . '" rel="bookmark">', '</a></div>' );
+			if ( 'post' == get_post_type() AND $categories_list ) // Hide category text for pages on Search
+			printf( '<div class="postin span4">' . __( 'Posted in %1$s ', 'the-bootstrap' ) . '</div>', $categories_list );
 		endif;
 		
 /*不显示发表时间等信息
