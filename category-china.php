@@ -39,12 +39,8 @@ get_header(); ?>
 
 </section>
 <section id="primary" class="span8">
-<?php
-if (function_exists('get_breadcrumbs')){
-get_breadcrumbs();
-}
-?>
-
+<?php if (function_exists('show_full_breadcrumb')) show_full_breadcrumb(); ?>
+<?php wp_list_cats('child_of=' . get_category_root_id($cat) . '&depth=0&hide_empty=0');?>	
 	<?php tha_content_before(); ?>
 	<div id="content" role="main">
 		<?php tha_content_top();
@@ -56,15 +52,12 @@ get_breadcrumbs();
 					echo apply_filters( 'category_archive_meta', '<div class="category-archive-meta">' . $category_description . '</div>' );
 				} ?>
 			</header><!-- .page-header -->
-	
 			<?php
 			while ( have_posts() ) {
 				the_post();
 				get_template_part( '/partials/content', get_post_format() );
 			}
 			the_bootstrap_content_nav();
-		else :
-			get_template_part( '/partials/content', 'not-found' );
 		endif;
 		
 		tha_content_bottom(); ?>
