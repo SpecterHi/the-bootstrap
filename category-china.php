@@ -40,7 +40,7 @@ get_header(); ?>
 </section>
 <section id="primary" class="span8">
 <?php if (function_exists('show_full_breadcrumb')) show_full_breadcrumb(); ?>
-<?php wp_list_cats('child_of=' . get_category_root_id($cat) . '&depth=0&hide_empty=0');?>	
+<?php wp_list_cats('child_of=' . get_category_root_id($cat) . '&optioncount=1&hide_empty=0');?>	
 	<?php tha_content_before(); ?>
 	<div id="content" role="main">
 		<?php tha_content_top();

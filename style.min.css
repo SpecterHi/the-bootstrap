@@ -23,11 +23,11 @@
  *
  *	This program is distributed in the hope that it will be useful,
  *	but WITHOUT ANY WARRANTY; without even the implied warranty of
- *	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	See the
  *	GNU General Public License for more details.
  *
  *	You should have received a copy of the GNU General Public License
- *	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *	along with this program.	If not, see <http://www.gnu.org/licenses/>.
  */
 
 
@@ -35,14 +35,14 @@
 -------------------------------------------------------------- */
 
 blockquote cite:before {
-    content: '\2014 \00A0';
+		content: '\2014 \00A0';
 }
 
 blockquote cite {
-    color: #999999;
-    display: block;
-    font-size: 13px;
-    line-height: 18px;
+		color: #999999;
+		display: block;
+		font-size: 13px;
+		line-height: 18px;
 }
 
 figure {
@@ -58,8 +58,8 @@ h1, h2, h3, h4, h5, h6, .clear {
 -------------------------------------------------------------- */
 
 .assistive-text {
-    clip: rect(1px, 1px, 1px, 1px);
-    position: absolute !important;
+		clip: rect(1px, 1px, 1px, 1px);
+		position: absolute !important;
 }
 
 body > .container {
@@ -130,7 +130,7 @@ article.page {
 }
 
 .entry-content .twitter-tweet-rendered {
-    max-width: 100% !important;
+		max-width: 100% !important;
 }
 
 
@@ -140,7 +140,7 @@ article.page {
 #comments-title {
 	border-bottom: 1px solid #EEEEEE;
 	font-size: 19.5px;
-    margin: 0 0 27px;
+		margin: 0 0 27px;
 }
 
 #comment,
@@ -266,7 +266,7 @@ table .label {
 
 .comment-subscription-form > label {
 	min-height: 18px;
-    padding-left: 18px;
+		padding-left: 18px;
 }
 
 
@@ -309,18 +309,18 @@ table .label {
 -------------------------------------------------------------- */
 
 .aligncenter {
-    display:block;
-    margin: 0 auto 20px;
+		display:block;
+		margin: 0 auto 20px;
 }
 
 .alignright {
-    float:right;
-    margin: 0 0 20px 20px;
+		float:right;
+		margin: 0 0 20px 20px;
 }
 
 .alignleft {
-    float:left;
-    margin: 0 20px 20px 0;
+		float:left;
+		margin: 0 20px 20px 0;
 }
 
 .wp-caption {
@@ -339,15 +339,15 @@ table .label {
 }
 
 .wp-caption.alignnone {
-    margin: 5px 20px 20px 0;
+		margin: 5px 20px 20px 0;
 }
 
 .wp-caption.alignleft {
-    margin: 5px 20px 20px 0;
+		margin: 5px 20px 20px 0;
 }
 
 .wp-caption.alignright {
-    margin: 5px 0 20px 20px;
+		margin: 5px 0 20px 20px;
 }
 
 .sticky {}
@@ -473,96 +473,105 @@ padding: 0;
 } */
 
 .navbar-brics5 {
-  color: #999999;
+	color: #999999;
 }
 .navbar-brics5 .nav > li{
 width:100%;
 margin:1px 0 0 4px;
-  background-color: #08c;
-  background-image: -moz-linear-gradient(top, #3bf, #08c);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3bf), to(#08c));
-  background-image: -webkit-linear-gradient(top, #3bf, #08c);
-  background-image: -o-linear-gradient(top, #3bf, #08c);
-  background-image: linear-gradient(to bottom, #3bf, #08c);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff33bbff', endColorstr='#ff0088cc', GradientType=0);
-  border: 1px solid #d4d4d4;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+	background-color: #08c;
+	background-image: -moz-linear-gradient(top, #3bf, #08c);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3bf), to(#08c));
+	background-image: -webkit-linear-gradient(top, #3bf, #08c);
+	background-image: -o-linear-gradient(top, #3bf, #08c);
+	background-image: linear-gradient(to bottom, #3bf, #08c);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff33bbff', endColorstr='#ff0088cc', GradientType=0);
+	border: 1px solid #d4d4d4;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 }
 .navbar-brics5 .nav > li > a{
 text-shadow: 0 1px 0 black;
 }
 .navbar-brics5 .brand:hover,
 .navbar-brics5 .nav > li > a:hover {
-  color: #ffffff;
+	color: #ffffff;
 }
 .navbar-brics5 .nav > li > a:focus,
 .navbar-brics5 .nav > li > a:hover {
-  background-color: transparent;
-  color: #ffffff;
+	background-color: transparent;
+	color: #ffffff;
 }
 .navbar-brics5 .nav .active > a,
 .navbar-brics5 .nav .active > a:hover,
 .navbar-brics5 .nav .active > a:focus {
-  color: #ffffff;
-  background-color: #111111;
+	color: #ffffff;
+	background-color: #111111;
 }
 .navbar-brics5 .navbar-link {
-  color: #999999;
+	color: #999999;
 }
 .navbar-brics5 .navbar-link:hover {
-  color: #ffffff;
+	color: #ffffff;
 }
 .navbar-brics5 .divider-vertical {
-  border-left-color: #111111;
-  border-right-color: #222222;
+	border-left-color: #111111;
+	border-right-color: #222222;
 }
 .navbar-brics5 .nav li.dropdown.open > .dropdown-toggle,
 .navbar-brics5 .nav li.dropdown.active > .dropdown-toggle,
 .navbar-brics5 .nav li.dropdown.open.active > .dropdown-toggle {
-  background-color: #059;
-  color: #ffffff;
+	background-color: #059;
+	color: #ffffff;
 }
 .navbar-brics5 .nav li.dropdown > .dropdown-toggle .caret {
-  border-top-color: #999999;
-  border-bottom-color: #999999;
+	border-top-color: #999999;
+	border-bottom-color: #999999;
 }
 .navbar-brics5 .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar-brics5 .nav li.dropdown.active > .dropdown-toggle .caret,
 .navbar-brics5 .nav li.dropdown.open.active > .dropdown-toggle .caret {
-  border-top-color: #ffffff;
-  border-bottom-color: #ffffff;
-  color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #0e0e0e;
-  background-image: -moz-linear-gradient(top, #151515, #040404);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#151515), to(#040404));
-  background-image: -webkit-linear-gradient(top, #151515, #040404);
-  background-image: -o-linear-gradient(top, #151515, #040404);
-  background-image: linear-gradient(to bottom, #151515, #040404);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff151515', endColorstr='#ff040404', GradientType=0);
-  border-color: #040404 #040404 #000000;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #040404;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+	border-top-color: #ffffff;
+	border-bottom-color: #ffffff;
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #0e0e0e;
+	background-image: -moz-linear-gradient(top, #151515, #040404);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#151515), to(#040404));
+	background-image: -webkit-linear-gradient(top, #151515, #040404);
+	background-image: -o-linear-gradient(top, #151515, #040404);
+	background-image: linear-gradient(to bottom, #151515, #040404);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff151515', endColorstr='#ff040404', GradientType=0);
+	border-color: #040404 #040404 #000000;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	*background-color: #040404;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .navbar-brics5 .btn-navbar:hover,
 .navbar-brics5 .btn-navbar:active,
 .navbar-brics5 .btn-navbar.active,
 .navbar-brics5 .btn-navbar.disabled,
 .navbar-brics5 .btn-navbar[disabled] {
-  color: #ffffff;
-  background-color: #040404;
-  *background-color: #000000;
+	color: #ffffff;
+	background-color: #040404;
+	*background-color: #000000;
 }
 .navbar-brics5 .btn-navbar:active,
 .navbar-brics5 .btn-navbar.active {
-  background-color: #000000 \9;
+	background-color: #000000 \9;
+}
+
+.postin {
+}
+.listpostitle {
+	
+	padding-bottom: 9px;
+	margin: 20px 0;
+	border-bottom: 1px solid #eeeeee;
 }
