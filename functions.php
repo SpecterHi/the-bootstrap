@@ -80,7 +80,13 @@ function the_bootstrap_setup() {
 	register_nav_menus( array(
 		'primary'		=>	__( 'Main Navigation', 'the-bootstrap' ),
 		'header-menu'  	=>	__( 'Header Menu', 'the-bootstrap' ),
-		'footer-menu' 	=>	__( 'Footer Menu', 'the-bootstrap' )
+		'footer-menu' 	=>	__( 'Footer Menu', 'the-bootstrap' ),
+		'brazil-menu' 	=>	__( 'Brazil Menu', 'the-bootstrap' ),
+		'russia-menu' 	=>	__( 'Russia Menu', 'the-bootstrap' ),
+		'india-menu' 	=>	__( 'India Menu', 'the-bootstrap' ),
+		'china-menu' 	=>	__( 'China Menu', 'the-bootstrap' ),
+		'safrica-menu' 	=>	__( 'SAfrica Menu', 'the-bootstrap' ),
+		'brics5-menu' 	=>	__( 'Brics5 Menu', 'the-bootstrap' )
 	) );
 	
 } // the_bootstrap_setup
@@ -196,8 +202,9 @@ function the_bootstrap_widgets_init() {
 		'after_title'	=>	'</h2>',
 	) );
 
+	/* 撤销各国sidebar
 	register_sidebar( array(
-		'name'			=>	__( 'bath Sidebar', 'the-bootstrap' ),
+		'name'			=>	__( 'brazil Sidebar', 'the-bootstrap' ),
 		'description'	=>	__( 'Shown on Homepage.', 'the-bootstrap' ),
 		'id'			=>	'bath',
 		'before_widget'	=>	'<aside id="%1$s" class="widget well %2$s">',
@@ -207,7 +214,7 @@ function the_bootstrap_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'			=>	__( 'rath Sidebar', 'the-bootstrap' ),
+		'name'			=>	__( 'russia Sidebar', 'the-bootstrap' ),
 		'description'	=>	__( 'Shown on Homepage.', 'the-bootstrap' ),
 		'id'			=>	'rath',
 		'before_widget'	=>	'<aside id="%1$s" class="widget well %2$s">',
@@ -237,7 +244,7 @@ function the_bootstrap_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'			=>	__( 'sath Sidebar', 'the-bootstrap' ),
+		'name'			=>	__( 'safrica Sidebar', 'the-bootstrap' ),
 		'description'	=>	__( 'Shown on Homepage.', 'the-bootstrap' ),
 		'id'			=>	'sath',
 		'before_widget'	=>	'<aside id="%1$s" class="widget well %2$s">',
@@ -245,7 +252,7 @@ function the_bootstrap_widgets_init() {
 		'before_title'	=>	'<h2 class="widget-title">',
 		'after_title'	=>	'</h2>',
 	) );
-	
+	撤销各国sidebar */
 	include_once( 'inc/the-bootstrap-image-meta-widget.php' );
 	register_widget( 'The_Bootstrap_Image_Meta_Widget' );
 
@@ -1126,69 +1133,5 @@ function _the_bootstrap_version() {
 	return $theme_version;
 }
 
-function get_breadcrumbs()
-{
-global $wp_query;
-
-if ( !is_home() ){
-
-// Start the UL
-echo '<ul class="breadcrumbs">';
-// Add the Home link
-echo '<li><a href="'. get_settings('home') .'">'. get_bloginfo('name') .'</a></li>';
-
-if ( is_category() )
-{
-$catTitle = single_cat_title( "", false );
-$cat = get_cat_ID( $catTitle );
-echo "<li> &raquo; ". get_category_parents( $cat, TRUE, " &raquo; " ) ."</li>";
-}
-elseif ( is_archive() && !is_category() )
-{
-echo "<li> &raquo; Archives</li>";
-}
-elseif ( is_search() ) {
-
-echo "<li> &raquo; Search Results</li>";
-}
-elseif ( is_404() )
-{
-echo "<li> &raquo; 404 Not Found</li>";
-}
-elseif ( is_single() )
-{
-$category = get_the_category();
-$category_id = get_cat_ID( $category[0]->cat_name );
-
-echo '<li> &raquo; '. get_category_parents( $category_id, TRUE, " &raquo; " );
-echo "</li>";
-}
-elseif ( is_page() )
-{
-$post = $wp_query->get_queried_object();
-
-if ( $post->post_parent == 0 ){
-
-echo "<li> &raquo; ".the_title(",", FALSE)."</li>";
-
-} else {
-$title = the_title(",", FALSE);
-$ancestors = array_reverse( get_post_ancestors( $post->ID ) );
-array_push($ancestors, $post->ID);
-
-foreach ( $ancestors as $ancestor ){
-if( $ancestor != end($ancestors) ){
-echo '<li> &raquo; <a href="'. get_permalink($ancestor) .'">'. strip_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ) .'</a></li>';
-} else {
-echo '<li> &raquo; '. strip_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ) .'</li>';
-}
-}
-}
-}
-
-// End the UL
-echo "</ul>";
-}
-}
 /* End of file functions.php */
 /* Location: ./wp-content/themes/the-bootstrap/functions.php */

@@ -16,16 +16,11 @@
 
 get_header(); ?>
 
-<section id="leftblank" class="span1">
-	<?php tha_content_before(); ?>
-	<div id="content" role="main">&nbsp;</div><!-- #content -->
-	<?php tha_content_after(); ?>
-</section><!-- #primary -->
-
 <section id="secondary" class="widget-area span2" role="complementary">
-<img src="wp-content/themes/the-bootstrap/img/brazil.png">
+<img src="/wp-content/themes/the-bootstrap/img/brazil.png">
 					<nav id="access" role="navigation">
 						<div <?php the_brics5_navbar_class(); ?>>
+							<div class="navbar-inner">
 								<div class="container">
 									<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
 									<a class="btn btn-navbar" data-toggle="collapse" data-target="#brazil-collapse">
@@ -44,14 +39,16 @@ get_header(); ?>
 										?>
 								    </div>
 								</div>
+							</div>
 						</div>				
 					</nav><!-- #access -->
 
 </section><!-- #secondary .widget-area -->
 <section id="secondary" class="widget-area span2" role="complementary">
-<img src="wp-content/themes/the-bootstrap/img/russia.png">
+<img src="/wp-content/themes/the-bootstrap/img/russia.png">
 					<nav id="access" role="navigation">
 						<div <?php the_brics5_navbar_class(); ?>>
+							<div class="navbar-inner">
 								<div class="container">
 									<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
 									<a class="btn btn-navbar" data-toggle="collapse" data-target="#russia-collapse">
@@ -69,15 +66,17 @@ get_header(); ?>
 										) ); 
 										?>
 								    </div>
+								</div>
 							</div>
 						</div>				
 					</nav><!-- #access -->
 
 </section><!-- #secondary .widget-area -->
 <section id="secondary" class="widget-area span2" role="complementary">
-<img src="wp-content/themes/the-bootstrap/img/india.png">
+<img src="/wp-content/themes/the-bootstrap/img/india.png">
 					<nav id="access" role="navigation">
 						<div <?php the_brics5_navbar_class(); ?>>
+							<div class="navbar-inner">
 								<div class="container">
 									<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
 									<a class="btn btn-navbar" data-toggle="collapse" data-target="#india-collapse">
@@ -94,6 +93,7 @@ get_header(); ?>
 											'walker'			=>	new The_Bootstrap_Nav_Walker,
 										) ); 
 										?>
+								    </div>
 								</div>
 							</div>
 						</div>				
@@ -101,9 +101,10 @@ get_header(); ?>
 
 </section><!-- #secondary .widget-area -->
 <section id="secondary" class="widget-area span2" role="complementary">
-<img src="wp-content/themes/the-bootstrap/img/china.png">
+<img src="/wp-content/themes/the-bootstrap/img/china.png">
 					<nav id="access" role="navigation">
 						<div <?php the_brics5_navbar_class(); ?>>
+							<div class="navbar-inner">
 								<div class="container">
 									<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
 									<a class="btn btn-navbar" data-toggle="collapse" data-target="#china-collapse">
@@ -121,15 +122,17 @@ get_header(); ?>
 										) ); 
 										?>
 								    </div>
+								</div>
 							</div>
 						</div>				
 					</nav><!-- #access -->
 
 </section><!-- #secondary .widget-area -->
 <section id="secondary" class="widget-area span2" role="complementary">
-<img src="wp-content/themes/the-bootstrap/img/safrica.png">
+<img src="/wp-content/themes/the-bootstrap/img/safrica.png">
 					<nav id="access" role="navigation">
 						<div <?php the_brics5_navbar_class(); ?>>
+							<div class="navbar-inner">
 								<div class="container">
 									<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
 									<a class="btn btn-navbar" data-toggle="collapse" data-target="#safrica-collapse">
@@ -148,6 +151,35 @@ get_header(); ?>
 										?>
 								    </div>
 								</div>
+							</div>
+						</div>				
+					</nav><!-- #access -->
+
+</section><!-- #secondary .widget-area -->
+<section id="secondary" class="widget-area span2" role="complementary">
+<img src="/wp-content/themes/the-bootstrap/img/brics5.gif">
+					<nav id="access" role="navigation">
+						<div <?php the_brics5_navbar_class(); ?>>
+							<div class="navbar-inner">
+								<div class="container">
+									<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+									<a class="btn btn-navbar" data-toggle="collapse" data-target="#brics5-collapse">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</a>
+									<div class="nav-collapse" id="brics5-collapse">
+										<?php wp_nav_menu( array(
+											'theme_location'	=>	'brics5-menu',
+											'menu_class'		=>	'nav',
+											'depth'				=>	3,
+											'fallback_cb'		=>	false,
+											'walker'			=>	new The_Bootstrap_Nav_Walker,
+										) ); 
+										?>
+								    </div>
+								</div>
+							</div>
 						</div>				
 					</nav><!-- #access -->
 

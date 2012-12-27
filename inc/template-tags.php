@@ -287,5 +287,29 @@ function the_bootstrap_comments_link( $zero = false, $one = false, $more = false
 endif;
 
 
+if ( ! function_exists( 'the_brics5_navbar_class' ) ) :
+/**
+ * Adds The Bootstrap navbar classes
+ *
+ * @author	WordPress.org
+ * @since	1.4.0 - 12.05.2012
+ *
+ * @return	void
+ */
+function the_brics5_navbar_class() {
+	$classes	=	array( 'navbar' );
+
+	if ( 'static' != the_bootstrap_options()->navbar_position )
+		$classes[]	=	the_bootstrap_options()->navbar_position;
+	
+	if ( the_bootstrap_options()->navbar_inverse )
+		$classes[]	=	'navbar-brics5';
+	
+	apply_filters( 'the_brics5_navbar_classes', $classes );
+
+	echo 'class="' . join( ' ', $classes ) . '"';
+}
+endif;
+
 /* End of file template-tags.php */
 /* Location: ./wp-content/themes/the-bootstrap/inc/template-tags.php */

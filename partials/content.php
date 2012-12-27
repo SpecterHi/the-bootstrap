@@ -23,12 +23,21 @@ tha_entry_before(); ?>
 		else :
 			the_title( '<h5 class="entry-title"><a href="' . get_permalink() .'" title="' . sprintf( esc_attr__( 'Permalink to %s', 'the-bootstrap' ), the_title_attribute( 'echo=0' ) ) . '" rel="bookmark">', '</a></h5>' );
 		endif;
+/* 不显示发表分类等信息 
+		$categories_list = get_the_category_list( _x( ', ', 'used between list items, there is a space after the comma', 'the-bootstrap' ) );
+
+		if ( 'post' == get_post_type() AND $categories_list ) // Hide category text for pages on Search
+			printf( '<div class="row"><div class="span2">' . __( '%1$s: ', 'the-bootstrap' ) . '</div>', $categories_list );
+ 不显示发表分类等信息 */
 		
+/* 不显示发表时间等信息
 		if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php the_bootstrap_posted_on(); ?>
 		</div><!-- .entry-meta -->
-		<?php endif; ?>
+		<?php endif; 
+不显示发表时间等信息 */ ?>
+
 	</header><!-- .entry-header -->
 
 	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
@@ -37,14 +46,10 @@ tha_entry_before(); ?>
 	</div><!-- .entry-summary -->
 	<?php endif; ?>
 
-	<footer class="entry-meta">
-		<?php
-		$categories_list = get_the_category_list( _x( ', ', 'used between list items, there is a space after the comma', 'the-bootstrap' ) );
 
-		if ( 'post' == get_post_type() AND $categories_list ) // Hide category text for pages on Search
-			printf( '<span class="cat-links block">' . __( 'Posted in %1$s.', 'the-bootstrap' ) . '</span>', $categories_list );
-		?>
+	<footer class="entry-meta">
 	</footer><!-- #entry-meta -->
+
 	
 	<?php tha_entry_bottom(); ?>
 </article><!-- #post-<?php the_ID(); ?> -->
